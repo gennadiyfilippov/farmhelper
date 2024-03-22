@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="textView">#D80404</color>
+    <color name="textResult">#64FF86</color>
+    <color name="inputField">#8D00FFF7</color>
+    <color name="resetButton">#A400FFEA</color>
+    <color name="resultButton">#8D00FF2A</color>
+    <color name="resultInfo">#00FFF7</color>
+    <color name="hintText">#AD000000</color>
+    <color name="exitButton">#B5B5B5</color>
+</resources>

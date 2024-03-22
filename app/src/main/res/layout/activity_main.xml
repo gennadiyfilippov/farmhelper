@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/calc"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/text1"
+        android:textAlignment="center"
+        android:textColor="@color/textView"
+        android:textSize="28sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/userField1"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/spaceForEdit1"
+        android:background="@color/inputField"
+        android:ems="10"
+        android:hint="@string/hintUserField"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hintText"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/spaceForEdit1"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp" />
+
+    <TextView
+        android:id="@+id/textUnit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/userField1"
+        android:layout_marginStart="50sp"
+        android:layout_toEndOf="@+id/spaceForEdit1"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/textUnit"
+        android:textAlignment="center"
+        android:textColor="@color/textView"
+        android:textSize="40sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userField1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/text2"
+        android:textAlignment="center"
+        android:textColor="@color/textView"
+        android:textSize="28sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/userField2"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/spaceForEdit2"
+        android:background="@color/inputField"
+        android:ems="10"
+        android:hint="@string/hintUserField"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hintText"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/spaceForEdit2"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp" />
+
+    <TextView
+        android:id="@+id/textUnit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/userField2"
+        android:layout_marginStart="50sp"
+        android:layout_toEndOf="@+id/spaceForEdit2"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/textUnit"
+        android:textAlignment="center"
+        android:textColor="@color/textView"
+        android:textSize="40sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userField2"
+        android:layout_alignBaseline="@+id/space"
+        android:layout_toStartOf="@+id/space"
+        android:background="@drawable/circle_button"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/resetButton"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:backgroundTint="@color/resetButton" />
+
+    <TextView
+        android:id="@+id/space"
+        android:layout_width="70sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userField2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80sp" />
+
+    <Button
+        android:id="@+id/resultButton"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userField2"
+        android:layout_alignBaseline="@+id/space"
+        android:layout_toEndOf="@+id/space"
+        android:background="@drawable/circle_button"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/resultButton"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:backgroundTint="@color/resultButton" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultButton"
+        android:layout_marginTop="30sp"
+        android:layout_alignStart="@+id/resetButton"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/text3"
+        android:textAlignment="center"
+        android:textColor="@color/textResult"
+        android:textSize="28sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/resultInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textResult"
+        android:layout_toEndOf="@+id/textResult"
+        android:layout_marginStart="30sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textAlignment="center"
+        android:textColor="@color/resultInfo"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultInfo"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/exitButton"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:backgroundTint="@color/exitButton"
+        />
+
+</RelativeLayout>

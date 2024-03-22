@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FarmHelper</string>
+    <string name="text1">Косая линия туловища:</string>
+    <string name="text2">Обхват грудной клетки:</string>
+    <string name="text3">Результат:</string>
+    <string name="resetButton">C</string>
+    <string name="resultButton">=</string>
+    <string name="hintUserField"><font size="50">0</font></string>
+    <string name="textUnit">см</string>
+    <string name="exitButton">Выход</string>
+</resources>
